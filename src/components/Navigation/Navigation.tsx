@@ -1,8 +1,11 @@
 import React, { useEffect } from 'react';
 import L from 'leaflet';
 
-const Navigation = ({ isMapVisible}) => {
- 
+interface NavigationProps {
+  isMapVisible: boolean; // the prop type
+}
+
+const Navigation: React.FC<NavigationProps> = ({ isMapVisible }) => {
      useEffect(() => {
         if (!isMapVisible) return;
     // Initialize the map after the component mounts

@@ -5,7 +5,7 @@ import 'leaflet/dist/leaflet.css';
 import Navigation from '@/components/Navigation/Navigation.js';
 
 const Home = () => {
-  const [isMapVisible, setIsMapVisible] = useState(false);
+  const [isMapVisible, setIsMapVisible] = useState<boolean>(false);
 
 const handlenav=()=>{
   setIsMapVisible((prev)=>(!prev))
